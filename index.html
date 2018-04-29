@@ -27,8 +27,8 @@
 				</div>
 				<div class="navbar-collapse collapse" id="example">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">¿Quienes Somos?</a></li>
+						<li><a href="#inicio">Inicio</a></li>
+						<li><a href="#quienes">¿Quienes Somos?</a></li>
 						<li><a href="#">Servicios</a></li>
 						<li><a href="#">Productos</a></li>
 						<li><a href="#">Contactanos</a></li>
@@ -40,7 +40,7 @@
 	<!--Fin de la barra de navegación-->
 	<!--Header-->
 	<header>
-		<div class="container">
+		<div class="container" id="inicio">
 			<div class="row">
 				<div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-6 col-md-offset-0 text-center">
 					<h1>Nos dedicamos a prestar un esmerado servicio de floristería en general.</h1>
@@ -60,7 +60,7 @@
 	</header>
 	<!--Fin del Header-->
 	<!--Primera Sección-->
-	<div class="container">
+	<div class="container" id="quienes">
 		<div class="row centrado">
 			<div class="col-lg-6 col-lg-offset-3">
 				<h1>¿Quienes Somos?</h1>
@@ -69,7 +69,7 @@
 			
 		</div>
 		<hr class="container" />
-		<div class="row centrado">
+		<div class="row centrado" id="servicios">
 			<h1>Servicios</h1><br/><br/>
 			<div class="col-md-4 col-sm-4">
 				<img src="img/galeria3.jpg" class="img-responsive img-circle wid center-block" alt="Servicios">
@@ -93,7 +93,7 @@
 		<!--Fin de la Primera Sección-->
 		<hr class="container" />
 		<!--Segunda sescción-->
-		<div class="container">
+		<div class="container" id="productos">
 			<div class="col-lg-6 col-lg-offset-3 text-center">
 				<h1>Productos</h1>
 				<h3>Ofrecemos a nuestros clientes una amplia gama de flores frescas y plantas artificiales, arreglos clásicos y de diseño así como una gran variedad de plantas naturales, e incluso la posibilidad de decorar grandes y pequeños espacios.</h3><br/><br/>
@@ -127,7 +127,7 @@
 		<!--Fin de la Segunda Sección-->
 
 		<hr class="container" />
-		<div class="container">
+		<div class="container" id="contactanos">
 			<div class="row centrado">
 				<div class="col-lg-6 col-lg-offset-3">
 					<h1>Contactanos</h1>
@@ -147,12 +147,27 @@
 					</ul>
 				</div>
 				<div class="col-lg-6">
-					<img src="img/1_2_8.jpg" class="img-responsive img-circle wid center-block" alt="equipo">
-					<h4>Pablo Alboran</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-					<p><i class="glyphicon glyphicon-briefcase"></i>
-					<i class="glyphicon glyphicon-link"></i>
-					<i class="glyphicon glyphicon-globe"></i></p>
+					<div class="well">
+						<form>
+					  <div class="form-group">
+					    <label for="nombre">Nombre:</label>
+					    <input type="text" class="form-control" id="nombre">
+					  </div>
+					  <div class="form-group">
+					    <label for="email">E-mail:</label>
+					    <input type="email" class="form-control" id="email">
+					  </div>
+					  <div class="form-group">
+					    <label for="telefono">Teléfono:</label>
+					    <input type="text" class="form-control" id="telefono">
+					  </div>
+					  <div class="form-group">
+					    <label for="mensaje">Mensaje:</label>
+					    <textarea name="mensaje" id="mensaje" cols="5" rows="5" class="form-control"></textarea>
+					  </div>
+					  <button type="submit" class="btn btn-primary">Enviar</button>
+					</form>
+					</div>
 				</div>
 			</div>
 		</div>
